@@ -1,0 +1,13 @@
+C:\Users\sahil\AppData\Local\Android\Sdk
+
+Text will always go in <Text/>.
+Every view uses Flex-Box and direction is column-wise (by default).
+
+justi-content - organise elements along main axis
+align-itmes - organise along opposite axis
+
+Stylesheet.create may provide some performance optimizations in future to the style object being passed.
+
+In react-native scrolling is not by default provided which is there in browsers.
+
+Use REACT_NATIVE_DEBUGGER_APP for debugging in system.

@@ -8,12 +8,12 @@ const GoalInput = ({ addGoalHandler, isAddMode, onCancel }) => {
     setEnteredGoal(enteredText);
   };
 
-  const emptyInputBoxHandler = () => {
+  const addButtonHandler = () => {
     addGoalHandler(enteredGoal);
     setEnteredGoal("");
   };
 
-  const emptyInputBoxHandlerOnCancel = () => {
+  const cancelButtonHandler = () => {
     onCancel();
     setEnteredGoal("");
   };
@@ -29,14 +29,10 @@ const GoalInput = ({ addGoalHandler, isAddMode, onCancel }) => {
         />
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
-            <Button title="ADD" onPress={emptyInputBoxHandler} />
+            <Button title="ADD" onPress={addButtonHandler} />
           </View>
           <View style={styles.button}>
-            <Button
-              title="CANCEL"
-              onPress={emptyInputBoxHandlerOnCancel}
-              color="red"
-            />
+            <Button title="CANCEL" onPress={cancelButtonHandler} color="red" />
           </View>
         </View>
       </View>
